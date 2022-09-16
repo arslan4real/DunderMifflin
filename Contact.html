@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/be0b1dda01.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="banner banner-contact-us">
+        <div class="navbar">
+            <a href="index.html"><img src="Images/logo.jpg" class="logo"></a>
+                <ul>
+                    <li><a class="white" href="index.html">Home</a></li>
+                    <li><a class="white" href="Contact.html">Contact Us</a></li>
+                    <li><a class="white" href="aboutUs.html">About Us</a></li>
+                    <li><a class="white" href="Team.html">Our Team</a></li>
+                </ul>    
+        </div>        
+        <div class="contact-us-form">
+            <h1 class="title white">Contact Us</h1>
+            <form class="form-block">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">              
+
+                <label for="Message">Message</label>
+                <textarea class="Message" name="Message" rows="4" cols="50"></textarea>
+
+                <button id="open-modal" type="button" >
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+        <div class="modal-container" id="modal-container">
+            <div class="modal">
+                <div class="modal-header">
+                    <h1>Success</h1>
+                    <button id="close-modal" class="close-button">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="animation">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player src="/checked.json"  background="transparent"  speed="0.5"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                </div>
+                <p>Your message has been sent successfully!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="modal.js"></script>
+
+</html>
